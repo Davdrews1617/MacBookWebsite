@@ -1,17 +1,12 @@
-name: Test
+name: TICS
 on: [push]
 jobs:
-  Github-Projects:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Hola mundo
-        run: echo hola mundo
-      - name: Repositorio
+      - name: Checkout
         uses: actions/checkout@v7
       - run: ls -la
-      - name: Setup node
-        uses: actions/setup-node@v6
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10
+
+      - name: hola erick
+        run: echo "hola erick"
