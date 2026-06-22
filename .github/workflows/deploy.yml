@@ -6,3 +6,5 @@ jobs:
     steps:
       - name: Hola mundo
         run: echo hola mundo
+      - name: Repositorio
+        uses: action/checkout@v7
